@@ -3,10 +3,24 @@
         <title>Welcome to the Subsite | Welcome</title>
         <link rel="stylesheet" href="../css/style2.css">
         <style>
-            body {
-                font-family: Arial, sans-serif;
+            /* Reset default margin and padding */
+            body, h1, h2, h3, h4, h5, h6, p, ul, li {
                 margin: 0;
                 padding: 0;
+            }
+
+            /* Set a base font size and line height */
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            /* Add some spacing around the content */
+            .container {
+                max-width: 960px;
+                margin: 0 auto;
+                padding: 20px;
             }
 
             /* Header */
@@ -22,34 +36,37 @@
             }
 
             header .highlight {
-                color: #cd4c30;
+                color: #c85743;
             }
 
             header nav ul {
                 margin: 0;
                 padding: 0;
                 list-style: none;
+                display: flex;
             }
 
             header nav ul li {
-                display: inline;
+                margin-right: 20px;
             }
 
             header nav ul li a {
                 color: #fff;
                 text-decoration: none;
                 padding: 10px 20px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
             }
 
             header nav ul li a:hover {
-                background-color: #ca3525;
+                background-color: #e45d5abd;
                 color: #333;
             }
 
             /* Section */
             #boxes {
                 padding: 20px;
-                background-color: #a12a16;
+                background-color: #bc412e;
             }
 
             #boxes .container {
@@ -65,16 +82,22 @@
                 text-align: center;
                 border-radius: 5px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            #boxes .box:hover {
+                transform: translateY(-5px);
             }
 
             #boxes .box a {
                 color: #333;
                 text-decoration: none;
                 font-weight: bold;
+                transition: color 0.3s ease;
             }
 
             #boxes .box a:hover {
-                color: #dd5353;
+                color: #b1241a;
             }
 
             /* Footer */
@@ -106,14 +129,17 @@
                 <div class="box">
                     <a href="page2.html">Page 1</a>
                 </div>
+                <div class="box">
+                    <img src="/img/casette.png">
+                </div>
             </div>
         </section>
-        
-        <img src="/img/casette.png">
-        
-        <footer>
-            <p>Neda Shehub Projects, Copyright &copy; 2022</p>
-        </footer>
-    </body>
-</html>
 
+        <footer>
+            <div class="container">
+                <p>&copy; 2022 Neda Shehub Projects, All rights reserved.</p>
+            </div>
+        </footer>
+        </body>
+        </html>
+        
